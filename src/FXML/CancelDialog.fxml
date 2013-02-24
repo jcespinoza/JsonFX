@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<fx:root type="AnchorPane" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="239.0" prefWidth="365.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <ImageView id="emptyImageView1" fitHeight="148.0" fitWidth="148.0" layoutX="203.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../res/Stop_signal.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Label id="label1" fx:id="info" layoutX="14.0" layoutY="14.0" prefHeight="133.0" prefWidth="212.0" text="Al hacer click en el boton 'Detener Apagados', se cancelara cualquier apagado o reinicio que se haya programado. Aun aquellos que no fueron creados por este programa. Presioner Cancelar para cerrar este dialogo y dejar todo como esta." wrapText="true" />
+    <Button id="button1" fx:id="detenerButton" defaultButton="true" onAction="#handleDetener" layoutX="212.0" layoutY="194.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="139.0" text="Detener Apagados" />
+    <Button id="button2" fx:id="cancelButton" cancelButton="true" onAction="#handleCancelar" layoutX="79.0" layoutY="194.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="125.0" text="Cancelar" />
+  </children>
+</fx:root>

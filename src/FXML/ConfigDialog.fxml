@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<fx:root type="AnchorPane" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="258.0" prefWidth="402.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <Rectangle id="rectangle1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="84.0" layoutX="17.0" layoutY="100.0" opacity="0.34" stroke="BLACK" strokeType="INSIDE" width="247.99998474121094" />
+    <ImageView id="emptyImageView1" fitHeight="104.25" fitWidth="126.0" layoutX="262.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <effect>
+        <Reflection fraction="0.2896825396825397" topOffset="-10.0" topOpacity="0.39682539682539686" />
+      </effect>
+      <image>
+        <Image url="@../res/settings.png" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Label id="label1" contentDisplay="CENTER" layoutX="28.0" layoutY="110.0" prefWidth="64.00009999999747" text="Accion:" />
+    <RadioButton id="radioButton1" fx:id="restartRadio" layoutX="106.0" layoutY="145.0" mnemonicParsing="false" text="Reiniciar">
+      <toggleGroup>
+        <ToggleGroup fx:id="accionTG" />
+      </toggleGroup>
+      <tooltip>
+        <Tooltip id="tooltip1" text="La accion predeterminada sera Reiniciar" />
+      </tooltip>
+    </RadioButton>
+    <RadioButton fx:id="apagarRadio" id="radioButton2" layoutX="106.0" layoutY="126.0" mnemonicParsing="false" selected="true" text="Apagar" toggleGroup="$accionTG">
+      <tooltip>
+        <Tooltip id="tooltip2" text="La accion predeterminada sera Apagar" />
+      </tooltip>
+    </RadioButton>
+    <Button id="button1" defaultButton="true" layoutX="290.0" onAction="#handleApply" layoutY="213.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Aplicar" />
+    <Label id="label2" layoutX="17.0" layoutY="24.0" prefHeight="76.0" prefWidth="248.0" text="Aqui se configura la accion predeterminada cuando se activa un apagado. Igualmente el texto del programa se adapta cuando se aplica el cambio." wrapText="true" />
+  </children>
+</fx:root>

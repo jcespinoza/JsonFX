@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root type="AnchorPane" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <GridPane id="gridPane1" prefHeight="399.0" prefWidth="599.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+      <children>
+        <Button id="button1" fx:id="nowButton" ellipsisString="" mnemonicParsing="false" onAction="#handleNowButton" prefHeight="31.0" prefWidth="180.0" text="Apagar Ahora!" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+          <font>
+            <Font name="Cambria" size="20.0" />
+          </font>
+          <tooltip>
+            <Tooltip id="tooltip3" fx:id="nowTooltip" text="Apaga la computadora de una maldita vez sin muchas preguntas." />
+          </tooltip>
+        </Button>
+        <ImageView id="emptyImageView2" fx:id="timerIcon" fitHeight="185.36270141601562" fitWidth="180.717529296875" onMouseClicked="#handleTimer" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+          <effect>
+            <Reflection fraction="0.19444444444444442" topOpacity="0.25396825396825395" />
+          </effect>
+          <image>
+            <Image url="@../res/timer.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <ImageView id="emptyImageView3" fx:id="hourIcon" fitHeight="173.14287607715684" fitWidth="175.7174835205078" onMouseClicked="#handleHour" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+          <effect>
+            <Reflection fraction="0.25" topOffset="-10.0" topOpacity="0.30952380952380953" />
+          </effect>
+          <image>
+            <Image url="@../res/clock.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <Label id="label1" ellipsisString="" text="Temporizador" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+          <effect>
+            <DropShadow color="#404040" fx:id="x1" />
+          </effect>
+          <font>
+            <Font name="Candara" size="14.0" fx:id="x2" />
+          </font>
+          <textFill>
+            <Color blue="0.125" green="0.125" red="0.125" fx:id="x3" />
+          </textFill>
+          <tooltip>
+            <Tooltip id="tooltip1" fx:id="timerTooltip" text="Activa un apagado hasta que pase el tiempo especificado." />
+          </tooltip>
+        </Label>
+        <Label id="label2" effect="$x1" ellipsisString="" font="$x2" text="Hora exacta" textFill="$x3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+          <tooltip>
+            <Tooltip id="tooltip2" fx:id="hourTooltip" text="Activa un apagado a la hora especificada." />
+          </tooltip>
+        </Label>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="447.0" minWidth="10.0" prefWidth="58.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="439.0" minWidth="10.0" prefWidth="202.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="386.0" minWidth="10.0" prefWidth="82.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="386.0" minWidth="10.0" prefWidth="202.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" prefWidth="55.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="217.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</fx:root>

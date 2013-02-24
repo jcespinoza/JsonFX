@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root type="AnchorPane" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="545.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <GridPane id="gridPane1" prefHeight="340.0" prefWidth="544.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+      <children>
+        <Label id="label1" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" prefWidth="110.0" text="Horas" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <Label id="label1" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" prefWidth="110.0" text="Minutos" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <Label id="label1" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" prefWidth="100.0" text="Segundos" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+        <Label id="label2" alignment="CENTER" contentDisplay="CENTER" text=":" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+          <font>
+            <Font size="72.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label id="label2" alignment="CENTER" contentDisplay="CENTER" font="$x1" text=":" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <Button id="button1" fx:id="defaultButton" defaultButton="true" mnemonicParsing="false" onAction="#handleDefault" prefHeight="30.0" prefWidth="123.0" text="Apagar!" GridPane.columnIndex="0" GridPane.columnSpan="7" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+        <ImageView id="emptyImageView1" fitHeight="84.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.columnSpan="7" GridPane.halignment="RIGHT" GridPane.rowIndex="0" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+          <effect>
+            <GaussianBlur radius="1.0" />
+          </effect>
+          <image>
+            <Image url="@../res/timer.png" preserveRatio="false" smooth="false" />
+          </image>
+        </ImageView>
+        <ImageView id="emptyImageView2" fitHeight="59.0" fitWidth="78.6666686409398" onMouseClicked="#handleBack" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
+        <Button id="button2" mnemonicParsing="false" onAction="#handleBack" prefWidth="85.0" text="&lt; Volver" GridPane.columnIndex="0" GridPane.columnSpan="7" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+        <AnchorPane id="anchorPane1" fx:id="hPlace" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+        <AnchorPane id="anchorPane1" fx:id="mPlace" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+        <AnchorPane id="anchorPane1" fx:id="sPlace" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="41.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="192.0" minWidth="10.0" prefWidth="119.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="161.0" minWidth="10.0" prefWidth="38.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="240.0" minWidth="10.0" prefWidth="121.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="42.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="154.0" minWidth="10.0" prefWidth="112.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="71.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="136.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="136.0" minHeight="10.0" prefHeight="122.0" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="94.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</fx:root>

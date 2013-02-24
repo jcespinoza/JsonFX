@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<fx:root type="AnchorPane" id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="169.0" prefWidth="369.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <ImageView id="emptyImageView1" fitHeight="95.0" fitWidth="126.66666666666666" layoutX="228.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+    <Label id="label1" fx:id="confirmLabel" layoutX="14.0" layoutY="32.0" prefHeight="77.0" prefWidth="341.0" text="Seguro que quiere apagar su computadora ahora?" wrapText="true" />
+    <Button id="button1" cancelButton="true" onAction="#handleYes" layoutX="71.0" layoutY="124.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="Si" />
+    <Button id="button1" defaultButton="true" onAction="#handleNo" layoutX="193.0" layoutY="124.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="No" />
+  </children>
+</fx:root>
